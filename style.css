@@ -1,0 +1,18 @@
+body {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.822);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+p{
+    background-color: rgba(0, 0, 0, 0.452);
+    border-radius: 8px;
+}
+
+img {
+    max-width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
