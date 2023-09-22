@@ -7,8 +7,10 @@ body {
 }
 
 p{
+    font-size: 1.2rem;
     background-color: rgba(0, 0, 0, 0.452);
     border-radius: 8px;
+    padding: 1px;
 }
 
 img {
