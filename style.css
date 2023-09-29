@@ -2,8 +2,7 @@ body {
     text-align: center;
     color: white;
     background-color: rgba(0, 0, 0, 0.822);
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 0;
 }
 
 p{
@@ -11,14 +10,29 @@ p{
     background-color: rgba(0, 0, 0, 0.452);
     border-radius: 8px;
     padding: 0.6rem;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 img {
-    max-width: 100%;
+    max-width: 80%;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 .border{
     border-bottom: 1px solid yellow;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.navbar {
+    background-color: black;
+    position: sticky;
+    top: 0px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex
 }
