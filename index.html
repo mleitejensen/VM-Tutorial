@@ -7,12 +7,24 @@
 </head>
 <body>
     <h1>VM og Apache2 tutorial</h1>
-    <p>Her skal du lære å sette opp din egen Ubuntu VM(Virtual Machine) med apache2. <br> Apache2 lar deg hoste nettsider fra maskinen.</p>
+    <p>
+        Her skal du lære å sette opp din egen Ubuntu VM(Virtual Machine) med apache2. <br> Apache2 lar deg hoste nettsider fra maskinen. <br>
+    </p>
+    <div class="words">Noen viktige kommandoer du kommer til å bruke er.
+        <ul>
+            <li>"cd" = change directory. Flytter deg fra mappe til mappe</li>
+            <li>"ls" = list. Hviser en liste av alle filer i mappen du er i. Skriv "ls -a" for å se gjemte filer.</li>
+            <li>"sudo" = super user do. Dette putter man på starten. Det gjør at man kjører kommandoer som admin.</li>
+        </ul>
+    </div>
     <nav class="navbar">
         <ul>
-            <li class="vm">Sett Opp VM</li>
-            <li class="settings">Oppstart av VM</li>
-            <li class="git">Github</li>
+            <li class="vm">Lage VM (1)</li>
+            <li class="settings">Oppstart av VM (2)</li>
+            <li class="git">Github (3)</li>
+            <li class="settings2">Login på VM (4)</li>
+            <li class="clone">Hent filer fra Github (5)</li>
+            <li class="apache">Apache2 config (6)</li>
         </ul>
     </nav>
     <br>
@@ -129,7 +141,7 @@
     <p>Når du har lastet opp alle filene dine kan du trykke på "Commit changes".</p>
     <img src="./img/github 5.png" alt="Bilde av github">
     <div class="border"></div>
-    <p>Nå kan du gå tilbake til VM-en og se om den er ferdig. Trykk på "Reboot Now" når den er ferdig.</p>
+    <p class="settings2El">Nå kan du gå tilbake til VM-en og se om den er ferdig. Trykk på "Reboot Now" når den er ferdig.</p>
     <img src="./img/34.png" alt="Bilde av VM center">
     <div class="border"></div>
     <p>Når den spørr etter login, skriver du inn brukernavn. Etter det spørr den om passord.</p>
@@ -154,8 +166,8 @@
     </p>
     <img src="./img/39.png" alt="Bilde av VM center">
     <div class="border"></div>
-    <p>Gå tilbake til github og kopier https clone linken.</p>
-    <img src="./img/40.png" alt="Bilde av github">
+    <p class="gitClone">Gå tilbake til github og kopier https clone linken.</p>
+    <img src="./img/github 6.png" alt="Bilde av github">
     <div class="border"></div>
     <p>Skriv "sudo git clone (link)"</p>
     <img src="./img/41.png" alt="Bilde av VM center"><br>
@@ -163,7 +175,7 @@
     <p>skriv "ls" for å se filene.</p>
     <img src="./img/42.png" alt="Bilde av VM center"><br>
     <div class="border"></div>
-    <p>Nå må vi endre hvor apache2 ser etter nettsiden. skriv "cd /etc/apache2/sites-enabled".</p>
+    <p class="apacheEl">Nå må vi endre hvor apache2 ser etter nettsiden. skriv "cd /etc/apache2/sites-enabled".</p>
     <img src="./img/43.png" alt="Bilde av VM center"><br>
     <div class="border"></div>
     <p>For å skrive i en fil må vi bruke "nano". Skriv "sudo nano 000-default.conf"</p>

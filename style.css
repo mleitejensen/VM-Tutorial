@@ -5,6 +5,30 @@ body {
     margin: 0;
 }
 
+h1 {
+    padding-top: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        display: none;
+    }
+}
+
+.words {
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: grey;
+    font-size: 1.6rem;
+}
+
+.words ul {
+    list-style: none;
+    
+}
+
 p{
     font-size: 1.6rem;
     background-color: rgba(0, 0, 0, 0.452);
@@ -33,6 +57,15 @@ img {
 }
 
 .navbar ul {
+    justify-content: space-between;
     list-style: none;
-    display: flex
+    display: flex;
+    padding: 15px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.navbar ul li {
+    padding: 5px;
+    cursor: pointer;
 }
