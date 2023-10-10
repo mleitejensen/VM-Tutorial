@@ -17,19 +17,21 @@
             <li>"sudo" = super user do. Dette putter man på starten. Det gjør at man kjører kommandoer som admin.</li>
         </ul>
     </div>
+    <div class="progress"></div>
     <nav class="navbar">
-        <ul>
-            <li class="vm">Lage VM (1)</li>
-            <li class="settings">Oppstart av VM (2)</li>
-            <li class="git">Github (3)</li>
-            <li class="settings2">Login på VM (4)</li>
-            <li class="clone">Hent filer fra Github (5)</li>
-            <li class="apache">Apache2 config (6)</li>
-        </ul>
+            <ul>
+                <li class="vm">Lage VM (1)</li>
+                <li class="settings">Oppstart av VM (2)</li>
+                <li class="git">Github (3)</li>
+                <li class="settings2">Login på VM (4)</li>
+                <li class="clone">Hent filer fra Github (5)</li>
+                <li class="apache">Apache2 config (6)</li>
+            </ul>    
     </nav>
+    
     <br>
     <p class="vmEl">Skriv inn "10.10.1.20" i nettleseren din så kommer du til VM center. Trykk på "Launch Vsphere Client" og logg inn.</p>
-    <img src="./img/1.png" alt="Bilde av VM center">
+    <img src="./img/1.png" alt="Bilde av VM center" class="bilde small">
     <img src="./img/2.png" alt="Bilde av VM center">
     <div class="border"></div>
     <p>Her må du finne fram til din "pool". Du skal få utdelt det av læreren.</p>
@@ -69,7 +71,7 @@
     <img src="./img/14.png" alt="Bilde av VM center">
     <div class="border"></div>
     <p>Her er det bare en oppsumering, det er bare å trykke "Finish".</p>
-    <img src="./img/15.png" alt="Bilde av VM center">
+    <img src="./img/15.png" alt="Bilde av VM center" class="vmEnd">
     <div class="border"></div>
     <p class="settingsEl">Trykk på "play" knappen for å starte maskinen.</p>
     <img src="./img/16.png" alt="Bilde av VM center">
@@ -123,7 +125,7 @@
     <img src="./img/32.png" alt="Bilde av VM center">
     <div class="border"></div>
     <p>Nå må du vente noen minutter</p>
-    <img src="./img/33.png" alt="Bilde av VM center">
+    <img src="./img/33.png" alt="Bilde av VM center" class="settingsEnd">
     <div class="border"></div>
     <p class="gitEl">
         Mens du venter på det kan du gå inn på "github.com". Hvis du ikke har bruker, lag en nå. <br>
@@ -139,7 +141,7 @@
     <img src="./img/github 4.png" alt="Bilde av github">
     <div class="border"></div>
     <p>Når du har lastet opp alle filene dine kan du trykke på "Commit changes".</p>
-    <img src="./img/github 5.png" alt="Bilde av github">
+    <img src="./img/github 5.png" alt="Bilde av github" class="gitEnd">
     <div class="border"></div>
     <p class="settings2El">Nå kan du gå tilbake til VM-en og se om den er ferdig. Trykk på "Reboot Now" når den er ferdig.</p>
     <img src="./img/34.png" alt="Bilde av VM center">
@@ -164,7 +166,7 @@
         Nå må du finne deg fram til apache2 sine default nettside filer. <br> 
         Det finner du ved å skrive "cd /var/www". Så skriver du "ls" for å se alle filer i mappen.
     </p>
-    <img src="./img/39.png" alt="Bilde av VM center">
+    <img src="./img/39.png" alt="Bilde av VM center" class="settings2End">
     <div class="border"></div>
     <p class="gitClone">Gå tilbake til github og kopier https clone linken.</p>
     <img src="./img/github 6.png" alt="Bilde av github">
@@ -173,7 +175,7 @@
     <img src="./img/41.png" alt="Bilde av VM center"><br>
     <div class="border"></div>
     <p>skriv "ls" for å se filene.</p>
-    <img src="./img/42.png" alt="Bilde av VM center"><br>
+    <img src="./img/42.png" alt="Bilde av VM center" class="cloneEnd"><br>
     <div class="border"></div>
     <p class="apacheEl">Nå må vi endre hvor apache2 ser etter nettsiden. skriv "cd /etc/apache2/sites-enabled".</p>
     <img src="./img/43.png" alt="Bilde av VM center"><br>
@@ -182,7 +184,7 @@
     <img src="./img/44.png" alt="Bilde av VM center">
     <div class="border"></div>
     <p>Endre documentroot fra "/var/www/html" til "/var/www/navnPåMappenDin". Trykk på ctrl+x for å gå ut, du vil få spørrsmål om du vil lagre.</p>
-    <img src="./img/45.png" alt="Bilde av VM center">
+    <img src="./img/45.png" alt="Bilde av VM center" class="end">
     <img src="./img/46.png" alt="Bilde av VM center">
     <div class="border"></div>
     <p>Nå må vi restarte apache2 for at endrigene skal ta effekt. Skriv "sudo service apache2 reload"</p>

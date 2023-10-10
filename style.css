@@ -57,15 +57,27 @@ img {
 }
 
 .navbar ul {
+    margin: 0;
     justify-content: space-between;
     list-style: none;
     display: flex;
     padding: 15px;
     padding-right: 50px;
     padding-left: 50px;
+    
 }
 
 .navbar ul li {
     padding: 5px;
     cursor: pointer;
+}
+
+.progress{
+    background-color: green;
+    margin-top: 5px;
+    width: 0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    transition-duration: 0.5s;
 }
