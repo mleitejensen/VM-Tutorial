@@ -18,7 +18,7 @@ h1 {
 .words {
     margin-left: 10%;
     margin-right: 10%;
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0;
     padding: 1rem;
     background-color: grey;
     font-size: 1.6rem;
@@ -73,8 +73,10 @@ img {
 }
 
 .progress{
+    display: block;
     background-color: green;
-    margin-top: 5px;
+    height: 0px;
+    margin-top: 0px;
     width: 0;
     position: sticky;
     top: 0;

@@ -26,32 +26,27 @@ const img = document.querySelector("img")
 const progress = document.querySelector(".progress")
 
 vmLink.addEventListener("click", (e) => {
-    vm.scrollIntoView({ block: "center", behavior: "smooth" })
+    scroll(vm)
     highlight(vm)
 })
-
 settingsLink.addEventListener("click", (e) => {
-    settings.scrollIntoView({ block: "center", behavior: "smooth" })
+    scroll(settings)
     highlight(settings)
 })
-
 gitLink.addEventListener("click", (e) => {
-    github.scrollIntoView({ block: "center", behavior: "smooth" })
+    scroll(github)
     highlight(github)
 })
-
 settings2Link.addEventListener("click", (e) => {
-    settings2.scrollIntoView({ block: "center", behavior: "smooth" })
+    scroll(settings2)
     highlight(settings2)
 })
-
 cloneLink.addEventListener("click", (e) => {
-    gitClone.scrollIntoView({ block: "center", behavior: "smooth" })
+    scroll(gitClone)
     highlight(gitClone)
 })
-
 apacheLink.addEventListener("click", (e) => {
-    apache.scrollIntoView({ block: "center", behavior: "smooth" })
+    scroll(apache)
     highlight(apache)
 })
 
@@ -59,61 +54,33 @@ window.addEventListener("scroll", (e) => {
     if (window.scrollY > (end.offsetHeight + end.offsetTop)){
         progress.style.width = "100%"
     }else if (window.scrollY > (cloneEnd.offsetHeight + cloneEnd.offsetTop)){
-        progress.style.padding = "5px"
         progress.style.width = "83%"
     } else if(window.scrollY > (settings2End.offsetHeight + settings2End.offsetTop)){
-        progress.style.padding = "5px"
         progress.style.width = "63%"
     }else if(window.scrollY > (gitEnd.offsetHeight + gitEnd.offsetTop)){
-        progress.style.padding = "5px"
         progress.style.width = "46%"
     }else if(window.scrollY > (settingsEnd.offsetHeight + settingsEnd.offsetTop)){
-        progress.style.padding = "5px"
         progress.style.width = "32%"
-    }else if(window.scrollY >(vmEnd.offsetHeight + vmEnd.offsetTop)){
-        progress.style.padding = "5px"
+    }else if(window.scrollY > (vmEnd.offsetHeight + vmEnd.offsetTop)){
         progress.style.width = "13%"
+        progress.style.height = "5px"
+        progress.style.marginTop = "5px"
     }else if(window.scrollY < (vmEnd.offsetHeight + vmEnd.offsetTop)){
+        progress.style.height = "0px"
+        progress.style.marginTop = "0px"
         progress.style.width = "0%"
-        progress.style.padding = "0"
-    }
+    } 
 })
-
-const bilde = document.querySelector(".bilde")
-
-if(bilde.classList.contains("small")){
-    bilde.addEventListener("click", (e) => {
-        bilde.style.position = "fixed"
-        bilde.style.top = "5%"
-        bilde.style.left = "5%"
-        bilde.style.maxWidth = "90%"
-        bilde.classList.add("big")
-        bilde.classList.remove("small")
-    })
-}
-
-if(bilde.classList.contains("big")){
-    bilde.addEventListener("click", (e) => {
-        console.log("e")
-        bilde.style.position = "relative"
-        bilde.style.top = "0"
-        bilde.style.left = "0"
-        bilde.style.maxWidth = "80%"
-        bilde.classList.remove("big")
-        bilde.classList.add("small")
-    })
-}
-
-
-
-
-
 
 function highlight(x){
     x.style.transitionDuration = "1s";
     x.style.backgroundColor = "white";
-    let t = setTimeout(function(){
+    setTimeout(function(){
         x.style.transitionDuration = "0";
         x.style.backgroundColor = "rgba(0, 0, 0, 0.452)";
     },(500));
+}
+
+function scroll(x){
+    x.scrollIntoView({ block: "center", behavior: "smooth" })
 }
