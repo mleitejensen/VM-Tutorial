@@ -88,13 +88,12 @@ img {
 }
 
 .back{
-    max-width: 10%;
-    top: 1rem;
-    left: 1rem;
-    position: absolute;
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+    text-decoration: underline;
 }
 
 .back a{
-    text-decoration: none;
     color: white;
 }
