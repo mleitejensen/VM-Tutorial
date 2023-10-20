@@ -26,7 +26,10 @@ h1 {
 
 .words ul {
     list-style: none;
-    
+}
+
+.words ul li{
+    padding: 4px;
 }
 
 p{
@@ -82,4 +85,16 @@ img {
     top: 0;
     z-index: 2;
     transition-duration: 0.5s;
+}
+
+.back{
+    max-width: 10%;
+    top: 1rem;
+    left: 1rem;
+    position: absolute;
+}
+
+.back a{
+    text-decoration: none;
+    color: white;
 }
